@@ -1,3 +1,6 @@
+# Jon Wexler
+# WDI PA 2015
+# Recursive vs Iterative approach
 
 # while loop version of counter method
 # from 100->0

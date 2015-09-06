@@ -1,3 +1,7 @@
+# Jon Wexler
+# WDI PA 2015
+# Zoo example for Class creation and Inheritance
+
 class Zoo
     # @exhibits is an array of animal "Objects"
     attr_accessor :exhibits
@@ -30,7 +34,8 @@ class Zoo
 
 end
 
-
+# Generic Animal class with name and origin attributes, name initialized with
+# instantiation of Animal object
 class Animal
     attr_accessor :name
     attr_accessor :origin
@@ -41,6 +46,7 @@ class Animal
 
 end
 
+# Elephant extends Animal and has stomp method
 class Elephant < Animal
 
     def stomp
@@ -48,6 +54,7 @@ class Elephant < Animal
     end
 end
 
+# Tiger extends Animal and has food attribute and attack instance method
 class Tiger < Animal
     attr_accessor :food
 
@@ -56,6 +63,7 @@ class Tiger < Animal
     end
 end
 
+# Calls: 
 
 z = Zoo.new
 

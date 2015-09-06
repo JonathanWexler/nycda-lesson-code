@@ -1,3 +1,7 @@
+# Jon Wexler
+# WDI PA 2015
+# Inheritance example with Robot and subclass robots
+
 class Robot
     # @material is a String
     # tell us what material this Robot is made of

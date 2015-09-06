@@ -1,6 +1,9 @@
+# Jon Wexler
+# WDI PA 2015
+# Complex Recursive algorithm example
+
 # print fibonacci sequence up to passed number
 # 1 1 2 3 5 8...
-
 
 def fib(num)
     if num == 1 || num == 2
@@ -12,5 +15,6 @@ def fib(num)
     end
 end
 
+# Function Call
 puts fib(6)
 
