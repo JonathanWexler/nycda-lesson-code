@@ -1,0 +1,23 @@
+<br/>
+
+<!-- Creating a form that submits to our index action (not the default create action) -->
+<div class="container">
+    <h1>Create an account</h1>
+    <p>Enter your name and email</p>
+
+    <%= form_for @user, url: {action: "index"}, html: {class: "form"} do |f| %>
+    <%= f.text_field :name, :placeholder => "Name" %>
+    <%= f.text_field :email, size: "60x12",:placeholder => "Email" %>
+    <%= f.submit "Create" %>
+    <% end %>
+
+</div>
+
+<!-- Display error messages if the user has any -->
+    <% if @user.errors.full_messages.any? %>
+    <ul>
+        <% @user.errors.full_messages.each do |error_message| %>
+        <li><%= error_message%></li> <br />
+        <% end %>
+    </ul>
+    <% end %>
