@@ -1,0 +1,13 @@
+<h1>Create User</h1>
+
+<div class="container">
+    <h1>Create an account</h1>
+    <p>Enter your name and email</p>
+
+    <%= form_for User.new, html: {class: "form"} do |f| %>
+    <%= f.text_field :name, :placeholder => "Name" %>
+    <%= f.text_field :email, size: "60x12",:placeholder => "Email" %>
+    <%= f.submit "Create"%>
+    <% end %>
+
+</div>
